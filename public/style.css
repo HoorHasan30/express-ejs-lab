@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Henny+Penny&family=IM+Fell+English:ital@0;1&family=Londrina+Shadow&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Unkempt:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    background-color: rgb(247, 239, 228);
+    color: rgb(152, 139, 136);
+
+    font-family: 'Alice', system-ui;
+}
+
+/* NavBar */
+nav {
+    background-color: rgb(152, 139, 136);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 16px;
+    margin-bottom: 20px;
+
+    gap: 20px;
+
+}
+nav a {
+    color: rgb(247, 239, 228);
+    text-decoration: none;
+    font-size: 1rem;
+}
+nav a:hover {
+    cursor: pointer;
+}
+
+/* Home Page */
+#home-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100%;
+}
+#web-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#see-link{
+    background-color: rgb(152, 139, 136);
+    border-radius: 10px;
+    box-shadow: 0 4px #b1a0953d;
+
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+
+    text-align: center;
+}
+#see-link a {
+    color: rgb(247, 239, 228);
+    text-decoration: none;
+}
+#see-link a:hover {
+    cursor: pointer;
+}
+
+/* All Res */
+#all-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100%;
+}
+#display-res{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+    width: 90%;
+    height: 90%;
+}
+.res-cards{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgba(152, 139, 136, 0.351);
+    border: 4px solid rgb(152, 139, 136);
+    border-radius: 15px;
+    box-shadow: 0 5px #b1a0953d;
+
+    text-align: center;
+
+    height: 120px;
+    width: 30%;
+}
+.res-cards a {
+    color: rgb(152, 139, 136);
+    text-decoration: none;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.res-cards a:hover{
+    cursor: pointer;
+}
+.open{
+    color:green;
+    font-size: 0.9rem;
+}
+.closed{
+    color: red;  
+    font-size: 0.9rem;
+}

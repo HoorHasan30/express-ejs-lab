@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Restaurants</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <%- include('./partials/navBar')%>
+    
+    <main id="all-main">
+        <h1>All Resturaunts</h1>
+
+        <div id="display-res">
+            <!-- looping through all res -->
+             <% resturaunts.forEach((res) => { %>
+                <div class="res-cards">
+                    <a href="/resturaunts/<%= res.id %>"><%=res.name %> - 
+                        <% if(res.isOpen){%>
+                            <span class="open">Open</span>
+                        <% } else { %>
+                            <span class="closed">Closed</span>
+                        <% } %>
+                    </a>
+                </div>
+             <%})%>
+        </div>
+    </main>
+
+</body>
+</html>

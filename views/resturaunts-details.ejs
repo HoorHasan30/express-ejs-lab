@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <%- include('./partials/navBar')%>
+
+    <main>
+        <h1>Resturaunt details</h1>
+
+        <div class="details">
+            <p>Name: <%= resturaunt.name %></p>
+            <p>Address: <%= resturaunt.Address %></p>
+
+            <p>Status:
+                <% if(resturaunt.isOpen){%>
+                    Open
+                <% } else { %>
+                    Closed
+                <% } %>
+            </p>
+
+            <p>Phone Number: <%= resturaunt.phone %></p>
+        </div>
+
+        <div id="menu">
+            <% for (let item of resturaunt.menu) {%>
+                <div class="item">
+                    <p><%= item.name %></p>
+                    <p>Price: <%= item.price %></p>
+                    <p>Rating: <%= item.rating %></p>
+                </div>
+            <% } %>
+        </div>
+    </main>
+</body>
+</html>
