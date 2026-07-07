@@ -5,31 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant</title>
 
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <%- include('./partials/navBar')%>
 
-    <main>
+    <main id="details-main">
         <h1>Resturaunt details</h1>
 
         <div class="details">
-            <p>Name: <%= resturaunt.name %></p>
-            <p>Address: <%= resturaunt.Address %></p>
+            <p><%= resturaunt.name %></p>
+            <p><%= resturaunt.address %></p>
 
-            <p>Status:
+            <p>
                 <% if(resturaunt.isOpen){%>
-                    Open
+                    <span class="open">Open</span>
                 <% } else { %>
-                    Closed
+                    <span class="closed">Closed</span>
                 <% } %>
             </p>
 
-            <p>Phone Number: <%= resturaunt.phone %></p>
+            <p><%= resturaunt.phone %></p>
         </div>
 
-        <div id="menu">
+        <div id="display-res-cards">
             <% for (let item of resturaunt.menu) {%>
-                <div class="item">
+                <div class="item res-cards">
                     <p><%= item.name %></p>
                     <p>Price: <%= item.price %></p>
                     <p>Rating: <%= item.rating %></p>

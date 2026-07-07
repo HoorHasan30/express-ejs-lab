@@ -36,8 +36,6 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    height: 100%;
 }
 #web-info{
     display: flex;
@@ -117,4 +115,30 @@ nav a:hover {
 .closed{
     color: red;  
     font-size: 0.9rem;
+}
+
+/* Details Page */
+#details-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100%;
+
+    text-align: center;
+}
+#display-res-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+    width: 90%;
+    height: 90%;
+}
+.item{
+    height: 150px;
 }
